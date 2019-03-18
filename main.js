@@ -42,8 +42,48 @@ fruits.push('mongo');
 
 console.log(fruits);
 
-const person = { firstName: 'John', lastName:'Doe', age: 30};
+const person = { firstName: 'John', 
+lastName:'Doe', 
+age: 30,
+hobbies:  ['music', 'sports'],
+address: {
+    street: '1267 Main St',
+    city: 'Boston',
+    state: 'MA'
+} 
+};
+
+person.email = "john@homtial.com";
 
 console.log(person);
 
 console.log(typeof person);
+
+//destructuring an object
+const {firstName, lastName, address:{city}} = person;
+
+console.log(firstName);
+console.log(city);
+
+const todo = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleteted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleteted: true
+    },
+    {
+        id: 3,
+        text: 'dentist appointment',
+        isCompleteted: false
+    }
+]
+
+console.log(todo);
+
+
+

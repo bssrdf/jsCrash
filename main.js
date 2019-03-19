@@ -81,9 +81,14 @@ const todo = [
         text: 'dentist appointment',
         isCompleteted: false
     }
-]
+];
 
 console.log(todo);
 
+const meeting = todo[1].text;
 
+console.log(meeting);
 
+for(let i=0; i<10; i++){
+    console.log(`For loop number: ${i}`);
+}

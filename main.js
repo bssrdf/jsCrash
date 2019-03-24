@@ -92,3 +92,19 @@ console.log(meeting);
 for(let i=0; i<10; i++){
     console.log(`For loop number: ${i}`);
 }
+
+
+const s2 = 'ABCABA';
+
+let s3 = [2, 4, 10, 8, 6];
+
+const s1Ind = s2.indexOf('B');
+
+console.log(s1Ind);
+
+console.log(s3);
+
+
+[s3[1], s3[2]] = [s3[2], s3[1]];
+
+console.log(s3);

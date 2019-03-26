@@ -108,3 +108,11 @@ console.log(s3);
 [s3[1], s3[2]] = [s3[2], s3[1]];
 
 console.log(s3);
+
+var ar1 = [[6,9], [10, 20], [5, 11], [1,2], [2,100], [3,4]];
+
+console.log(ar1);
+ar1.sort()
+console.log(ar1);
+ar1.sort(function(a,b){return a[1]-b[1];});
+console.log(ar1);

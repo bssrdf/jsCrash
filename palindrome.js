@@ -3,7 +3,7 @@
 function palindrome(str) {
     // Good luck!
 
-    strL = str.toLowerCase();
+    var strL = str.toLowerCase();
     var strNew = '';
     for(let i=0; i<strL.length; i++){
         var c = strL.charCodeAt(i);

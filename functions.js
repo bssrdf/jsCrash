@@ -34,3 +34,5 @@ var chessboard = function(size){
 }
 
 console.log(chessboard(8));
+
+

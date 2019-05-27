@@ -61,3 +61,4 @@ function maxRectInHistOn(histArr) {
 }
 
 console.log(maxRectInHist(histArr));
+console.log(maxRectInHistOn(histArr));

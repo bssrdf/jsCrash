@@ -121,4 +121,10 @@ for(let td of todo){
     console.log(td.text);
 }
 
+var mySet = new Set()
+
+
+mySet.add(1);
+mySet.add(3);
+mySet.add(2);
 

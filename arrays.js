@@ -15,7 +15,7 @@ console.log(0 in c) // true
 console.log(1 in c) // true
 
 const d = new Array(100);
-let i = 0
+let i = 0;
 d.forEach(() => i++);
 console.log(i) // 0 - the callback is never called
 
@@ -61,3 +61,24 @@ const todoText2 = todos.filter(function(todo){
     return todo.text;
 });
 console.log(todoText2);
+
+function f() {
+    return Array.from(arguments);
+}
+  
+console.log(f(1, 2, 3));
+
+var ag = Array.from({length: 5}, (v, i) => i);
+// [0, 1, 2, 3, 4]
+console.log(ag);
+
+var arrayLike = {length: 10};
+i = 0;
+while(i < 10){
+    arrayLike[i] = i*i;
+    i++;
+}
+console.log(arrayLike);
+
+
+

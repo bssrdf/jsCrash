@@ -1,6 +1,7 @@
 const a = [ undefined, , ];
 console.log(0 in a) // true
 console.log(1 in a) // false
+console.log('a\'s length is '+a.length)
 
 
 const b = [ , , ];

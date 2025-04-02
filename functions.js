@@ -12,6 +12,10 @@ console.log(bar(1,4));
 console.log(foo());
 console.log(bar());
 
+(() => {
+ console.log("unnamed arrow function invocation"); 
+})();
+
 
 var chessboard = function(size){
     let cb = '';

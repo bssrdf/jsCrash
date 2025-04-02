@@ -80,5 +80,9 @@ while(i < 10){
 }
 console.log(arrayLike);
 
+var A = [1,2,2];
+var B = [...A, 4];
+console.log(B);
+
 
 

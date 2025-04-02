@@ -74,15 +74,15 @@ function copy(mainObj) {
       objCopy[key] = mainObj[key]; // copies each property to the objCopy object
     }
     return objCopy;
-  }
-  const mainObj = {
+}
+const mainObj = {
     a: 2,
     b: 5,
     c: {
       x: 7,
       y: 4,
     },
-  }
+}
   console.log(copy(mainObj));
 
   obj = {
@@ -115,9 +115,9 @@ function copy(mainObj) {
 
 
   let someObj = {
-    a: 2,
+    a: 2
   }
-  
+  console.log('someObj', someObj);
   obj = Object.create(someObj, { 
     b: {
       value: 2,  
@@ -127,7 +127,21 @@ function copy(mainObj) {
       enumerable: true,  
     },
   });
+  console.log(obj);
   objCopy = Object.assign({}, obj);
   console.log(objCopy); // { c: 3 }
-  
 
+
+  var comb = {...dict, ...object};
+  console.log('spreaded objects:', comb);
+
+  obj = {b : {value : 2}, c: { val : 3, enumerable: true, }, d: 10};
+
+  // ES6 way of getting properties from an object
+  let {value} = obj.b;
+  let {enumerable} = obj.c;
+  let {b, c} = obj;
+  console.log(value);
+  console.log(enumerable);
+  console.log(b);
+  console.log(c);
